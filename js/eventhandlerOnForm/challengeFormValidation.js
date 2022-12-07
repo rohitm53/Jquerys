@@ -67,15 +67,15 @@ function enableFastFeedback(formElement) {
     }
   });
 
-  checkboxInput.blur(function () {
-    var checked = $(this).is(":checked");
-    if (!checked) {
-      $(this).css({
+  checkboxInput.change(function () {
+    var ischecked = $(this).is(":checked");
+    if (!ischecked) {
+      $(this).add("label[for='cb']").css({
         "box-shadow": "0 0 4px #811",
         border: "1px solid #060",
       });
     } else {
-      $(this).css({
+      $(this).add("label[for='cb']").css({
         "box-shadow": "0 0 4px #181",
         border: "1px solid #060",
       });
