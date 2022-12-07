@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+        integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <script src="js/eventhandlerOnForm/challengeFormValidation.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form Jquery event handler</title>
+</head>
+<body>
+    <div id="content">
+        <div class="text-center">
+            <h1>Forms Jquery event handler demo</h1>
+        </div>
+
+        <button id="btn-click">Click</button>
+        <button id="btn-hover">Hover</button><br>
+
+        <div class="red-box">Red</div>
+        <div class="green-box">Green</div>
+        <div class="blue-box">Blue</div>
+        <div class="dummy">Dummy</div>
+        <div class="clear"></div>
+
+        <h2>Hi, I'm the Base Project!</h2>
+        <p data-mydata="Some data here">Add elements here as <em>you like to try out jQuery</em>. This is your <span>playground
+                to test out</span> anything that comes into your mind.</p>
+        <p><strong>OR:</strong> Copy this <a href="/url" id="special-link">project structure</a> into a new directory first to
+            create separate playgrounds for animations, manipulations, event handlers etc.</p>
+
+        <form id="form" action="">
+            <input type="text" id="name" placeholder="Enter your name"><br>
+            <span id="name-feedback"></span><br/>
+
+            <input type="password" id="password" placeholder="Enter your password"><br>
+            <span id="password-feedback"></span><br/>
+
+            <input type="range" id="amount" min="1" max="5"> <br/>
+
+            <textarea id="message" cols="30" rows="10"></textarea><br/>
+            <span id="message-feedback"></span><br />
+
+            <input type="checkbox" id="checkbox" name="cb">
+            <label for="cb">Check me</label><br />
+            <span id="checkbox-feedback"></span><br /><br />
+            
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+</body>
+</html>
